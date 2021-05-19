@@ -525,7 +525,7 @@ body {
 .callout__heading {
   color: #fff;
   margin-top: 0;
-  white-space: nowrap;
+  font-size: 3rem;
 }
 
 .callout .btn {
