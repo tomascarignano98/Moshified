@@ -508,10 +508,6 @@ a {
 
 /* Callouts */
 
-body {
-  margin: 2px;
-}
-
 .callout {
   border-radius: 5px;
   padding: 4rem;
@@ -550,4 +546,43 @@ body {
     justify-self: self-start;
     margin: 0 2rem;
   }
+}
+
+/* Collapsibles */
+
+body {
+  margin: 2px;
+}
+
+.collapsible__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  font-size: 3rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
