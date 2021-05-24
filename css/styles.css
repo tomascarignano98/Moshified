@@ -36,6 +36,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -619,7 +620,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 1140px;
 }
 
 /* Navigation Bar */
@@ -683,5 +684,37 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+  color: #b9c3cf;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__content h1 {
+  font-size: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    align-self: center;
+    text-align: left;
   }
 }
