@@ -19,7 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Moshify - Go online for just $9</title>
@@ -28,7 +27,9 @@
     <!-- Nav Bar -->
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="/images/logo.svg" alt="" /></a>
+        <a class="nav__brand" href="/"
+          ><img src="/images/logo.svg" alt="" aria-label="Moshify"
+        /></a>
         <svg class="icon icon--secondary nav__toggler">
           <use href="/images/sprite.svg#menu"></use>
         </svg>
@@ -73,7 +74,12 @@
         </p>
       </header>
       <div class="input-group">
-        <input type="text" class="input" placeholder="Enter domain here..." />
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain here..."
+          aria-label="Domain"
+        />
         <button class="btn btn--accent">
           <svg class="icon icon--secondary">
             <use href="/images/sprite.svg#search"></use>
